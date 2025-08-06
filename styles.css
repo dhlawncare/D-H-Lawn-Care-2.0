@@ -7,77 +7,88 @@
 body {
   margin: 0;
   font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
-  background: #f5f7fa;
-  color: #263238;
+  background: #182c1a;
+  color: #f0f5ef;
   line-height: 1.6;
+  text-align: center;
 }
 
 /* Hero / Header */
 .hero {
-  background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+  background: url('https://th.bing.com/th/id/R.7a61fbf4795be2545ad06785b0907c90?rik=%2fQ5F4Ad%2bDmcD9Q&riu=http%3a%2f%2f4.bp.blogspot.com%2f_00CejPq24Zs%2fTAZlSrjRmvI%2fAAAAAAAAACI%2f1zv9hLSvIhc%2fs1600%2fstriped%2blawn.jpg&ehk=vBPniK%2bZYQXF7Zy0spmc8oeLtBYJ%2fl5kXKjZ0z4Kvaw%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1') center/cover no-repeat;
   min-height: 60vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   color: #fff;
-  text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+  text-shadow: 0 2px 10px rgba(0,0,0,0.4);
   padding: 4rem 1rem 2rem;
   border-bottom-left-radius: 40px;
   border-bottom-right-radius: 40px;
+  background-color: #14301a;
 }
+
 .logo {
   font-size: 3rem;
   font-weight: 900;
   letter-spacing: 3px;
   margin-bottom: 0.5rem;
-  background: rgba(0,0,0,0.3);
+  background: rgba(10,40,15,0.5);
   padding: 0.5rem 2rem;
   border-radius: 10px;
+  display: inline-block;
 }
+
 .tagline {
   font-size: 1.3rem;
   margin-bottom: 2rem;
-  background: rgba(0,0,0,0.2);
+  background: rgba(10,40,15,0.35);
   padding: 0.5rem 1.5rem;
   border-radius: 8px;
+  display: inline-block;
 }
+
 .cta-button {
   display: inline-block;
-  background: #fff;
-  color: #388e3c;
+  background: #194d30;
+  color: #fff;
   padding: 1rem 2.5rem;
   border-radius: 30px;
   font-size: 1.15rem;
   font-weight: bold;
   letter-spacing: 1px;
   text-decoration: none;
-  box-shadow: 0 4px 16px rgba(56,142,60,0.15);
+  box-shadow: 0 4px 16px rgba(20,60,30,0.18);
   transition: background 0.2s, color 0.2s, box-shadow 0.2s;
   margin-top: 1rem;
+  border: none;
 }
 .cta-button:hover {
-  background: #388e3c;
-  color: #fff;
-  box-shadow: 0 8px 24px rgba(56,142,60,0.25);
+  background: #21633a;
+  color: #e3ffe3;
+  box-shadow: 0 8px 24px rgba(33,99,58,0.25);
 }
 
 /* All sections */
 .section {
-  background: #fff;
+  background: #14301a;
   border-radius: 20px;
   margin: 2.5rem auto;
   max-width: 900px;
-  box-shadow: 0 2px 24px rgba(56,142,60,0.07);
+  box-shadow: 0 2px 28px rgba(20,60,30,0.14);
   padding: 2.5rem 2rem 2rem;
+  text-align: center;
 }
+
 .section h2 {
-  color: #388e3c;
+  color: #6fff6f;
   font-weight: 800;
   font-size: 2rem;
   margin-top: 0;
   margin-bottom: 1.2rem;
   letter-spacing: 1px;
+  text-align: center;
 }
 
 /* Services Section with stock images */
@@ -88,24 +99,27 @@ body {
   margin: 2rem 0 0 0;
   padding: 0;
   list-style: none;
+  justify-content: center;
 }
 .services-list li {
   flex: 1 1 250px;
-  background: #e7f8e8 url('https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80') center/cover no-repeat;
+  background: #246333 url('https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80') center/cover no-repeat;
   border-radius: 16px;
-  color: #0b3d1b;
+  color: #fff;
   font-weight: 600;
   font-size: 1.1rem;
   padding: 1.5rem 1rem;
   min-height: 180px;
   display: flex;
   align-items: flex-end;
-  box-shadow: 0 2px 10px rgba(56,142,60,0.08);
+  justify-content: center;
+  box-shadow: 0 2px 12px rgba(20,60,30,0.10);
   transition: box-shadow 0.2s, transform 0.2s;
   background-blend-mode: multiply;
   margin-bottom: 0.5rem;
   position: relative;
   z-index: 1;
+  text-align: center;
 }
 .services-list li:nth-child(2) {
   background-image: url('https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=600&q=80');
@@ -126,7 +140,7 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(0deg,rgba(56,142,60,0.6) 0%,rgba(56,142,60,0.1) 100%);
+  background: linear-gradient(0deg,rgba(24,44,26,0.7) 0%,rgba(24,44,26,0.15) 100%);
   border-radius: 16px;
   z-index: -1;
 }
@@ -134,7 +148,7 @@ body {
 /* Booking Section */
 iframe {
   border-radius: 18px;
-  box-shadow: 0 2px 12px rgba(56,142,60,0.10);
+  box-shadow: 0 2px 12px rgba(20,60,30,0.10);
   border: none;
   width: 100%;
   min-height: 500px;
@@ -143,23 +157,24 @@ iframe {
 
 /* Contact Section */
 #contact p, #contact a {
-  color: #0b3d1b;
-  font-size: 1.1rem;
-  margin-bottom: 0.5rem;
+  color: #c2ffc2;
+  font-size: 1.13rem;
+  margin-bottom: 0.6rem;
+  text-align: center;
 }
 #contact a {
   text-decoration: underline;
   transition: color 0.2s;
 }
 #contact a:hover {
-  color: #388e3c;
+  color: #6fff6f;
 }
 
 /* Footer */
 footer {
   text-align: center;
-  background: #222e24;
-  color: #fff;
+  background: #0e1a12;
+  color: #a5ffb1;
   padding: 1.5rem 0 1rem;
   margin-top: 3rem;
   font-size: 1rem;
